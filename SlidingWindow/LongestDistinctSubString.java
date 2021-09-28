@@ -3,6 +3,9 @@ import java.util.Map;
 
 public class LongestDistinctSubString {
     public static int distinctString(String word, int size){
+        if (word == null || word.length() == 0)
+        throw new IllegalArgumentException();
+
         int resultLength = 0, windowStart = 0;
         Map<Character, Integer> charFrequencyMap = new HashMap<Character,Integer>();
         for(int windowEnd = 0; windowEnd < word.length(); windowEnd++){
