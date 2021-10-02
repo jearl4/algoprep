@@ -37,7 +37,6 @@ public class Problem3 {
 
         return minLength > string.length() ? "" : string.substring(subStringStart, subStringStart + minLength);
     }
-    
     public static void main(String[] args) {
         System.out.println(smallestSubstring("aabdec", "abc"));
         System.out.println(smallestSubstring("abdbca", "abc"));
