@@ -1,7 +1,7 @@
 public class RemoveDupes {
     public static int removeDuplicates(int[] array) {
         int nextNonDuplicate = 1;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if(array[nextNonDuplicate - 1] != array[i]){
                 array[nextNonDuplicate] = array[i];
                 nextNonDuplicate++;
