@@ -31,5 +31,6 @@ public class TripletTarget {
         System.out.println(ClosestTripletSum(new int[] { -2, 0, 1, 2 }, 2));
         System.out.println(ClosestTripletSum(new int[] { -3, -1, 1, 2 }, 1));
         System.out.println(ClosestTripletSum(new int[] { 1, 0, 1, 1 }, 100));
+        System.out.println(ClosestTripletSum(new int[] { -5, -2, 3, 6 }, 5));
     }
 }
