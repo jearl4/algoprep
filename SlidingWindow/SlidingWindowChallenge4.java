@@ -1,5 +1,5 @@
 import java.util.*;
-public class Problem4 {
+public class SlidingWindowChallenge4 {
     public static List<Integer> wordCombo(String string, String[] words) {
         Map<String, Integer> wordFreqMap = new HashMap<>();
         for (String word : words) {

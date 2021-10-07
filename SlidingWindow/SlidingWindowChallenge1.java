@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Problem1 {
+public class SlidingWindowChallenge1 {
     public static boolean findPermutation(String text, String pattern) {
         int windowStart = 0, matched = 0;
         Map<Character, Integer> patternMap = new HashMap<>();

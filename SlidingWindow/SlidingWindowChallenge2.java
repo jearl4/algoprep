@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Problem2 {
+public class SlidingWindowChallenge2 {
     public static List<Integer> anagramIndex(String string, String pattern) {
         int windowStart = 0, count = 0;
         Map<Character, Integer> patternMap = new HashMap<>();

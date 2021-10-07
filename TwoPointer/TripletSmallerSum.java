@@ -5,7 +5,6 @@ public class TripletSmallerSum {
         Arrays.sort(array);
         int count = 0;
         for (int i = 0; i < array.length - 2; i++) {
-            // count += searchPair(array, target - array[i], i); 
             int tempCount = 0,
                 pointerA = i + 1,
                 pointerB = array.length - 1;

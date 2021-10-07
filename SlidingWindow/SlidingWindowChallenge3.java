@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Problem3 {
+public class SlidingWindowChallenge3 {
     public static String smallestSubstring(String string, String pattern) {
         int windowStart = 0, count = 0, minLength = string.length() + 1, subStringStart = 0;
         Map<Character, Integer> patternMap = new HashMap<>();
