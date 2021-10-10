@@ -17,7 +17,6 @@ public class MergeIntervalsChallenge1 {
             while (!minHeap.isEmpty() && meeting.start >= minHeap.peek().end) {
                 minHeap.poll();
             }
-            
             minHeap.offer(meeting);
             roomsRequired = Math.max(roomsRequired, minHeap.size());
         }
