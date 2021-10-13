@@ -1,10 +1,10 @@
 package DTO;
 
 public class ListNode {
-    int value = 0;
-    ListNode next;
+    public int value = 0;
+    public ListNode next;
 
-    ListNode(int value) {
-    this.value = value;
+    public ListNode(int value) {
+        this.value = value;
     }
 }
