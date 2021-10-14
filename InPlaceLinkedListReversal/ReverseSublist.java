@@ -17,12 +17,16 @@ public class ReverseSublist {
         ListNode lastNodeBeforeP = previous;
         ListNode lastNodeOfSublist = current;
         ListNode next = null;
-
+        
         for (int i = 0; current != null && i < q - p + 1; i++) {
             next = current.next;
+            System.out.println(next.value);
             current.next = previous;
+            System.out.println(current.next.value);
             previous = current;
+            System.out.println(previous.value);
             current = next;
+            System.out.println(current.value);
         }
 
         if (lastNodeBeforeP != null) {
