@@ -40,5 +40,6 @@ public class LinkedListChallenge2 {
         System.out.print(result.value + " ");
             result = result.next;
         }
+        System.out.println();
     }
 }
