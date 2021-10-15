@@ -1,4 +1,4 @@
-package DTO;
+package MergeIntervals.DTO;
 
 public class Interval {
     public int start;

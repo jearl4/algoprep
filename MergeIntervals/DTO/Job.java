@@ -1,4 +1,4 @@
-package DTO;
+package MergeIntervals.DTO;
 
 public class Job {
     public int start;

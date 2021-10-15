@@ -1,3 +1,7 @@
+package FastAndSlowPointers;
+
+import FastAndSlowPointers.DTO.ListNodeDTO;
+
 public class LinkedListMiddle {
     public static ListNodeDTO findMiddleNode(ListNodeDTO head) {
         ListNodeDTO slow = head, fast = head;

@@ -1,3 +1,5 @@
+package TwoPointer;
+
 import java.util.*;
 public class TripletSmallerSumArrays {
     public static List<List<Integer>> smallerSums(int[] array, int target) {

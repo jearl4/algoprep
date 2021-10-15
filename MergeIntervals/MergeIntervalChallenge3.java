@@ -1,5 +1,7 @@
+package MergeIntervals;
+
 import java.util.*;
-import DTO.*;
+import MergeIntervals.DTO.Interval;
 
 class EmployeeInterval {
     Interval interval; // interval representing employee's working hours 

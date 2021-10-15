@@ -1,3 +1,5 @@
+package SlidingWindow;
+
 public class SmallestSubArray {
     public static int findSmallestSubArray(int size, int[] array){
         int result = Integer.MAX_VALUE, tempSum = 0, windowStart = 0;

@@ -1,5 +1,7 @@
+package MergeIntervals;
+
 import java.util.*;
-import DTO.*;
+import MergeIntervals.DTO.*;
 
 public class MergeIntervalsChallenge2 {
     public static int findMaxCPULoad(List<Job> jobs) {

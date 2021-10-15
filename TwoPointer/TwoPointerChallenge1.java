@@ -1,3 +1,5 @@
+package TwoPointer;
+
 import java.util.*;
 public class TwoPointerChallenge1 {
     public static List<List<Integer>> uniqueQuadruplets(int[] array, int target) {

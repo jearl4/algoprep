@@ -1,3 +1,5 @@
+package FastAndSlowPointers;
+
 public class FindDuplicateNumberTwoPointer {
     public static int findDuplicateNumber(int[] arr) {
         int slow = 0, fast = 0;

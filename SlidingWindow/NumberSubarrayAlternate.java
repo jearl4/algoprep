@@ -1,3 +1,5 @@
+package SlidingWindow;
+
 public class NumberSubarrayAlternate {
     public static int NumberSubarray(int[] array, int replacementCount) {
         int windowStart = 0, result = 0, maxOneCount = 0;

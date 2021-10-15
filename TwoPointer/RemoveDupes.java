@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class RemoveDupes {
     public static int removeDuplicates(int[] array) {
         int nextNonDuplicate = 1;

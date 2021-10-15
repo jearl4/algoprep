@@ -1,8 +1,10 @@
+package MergeIntervals;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import DTO.Interval;
+import MergeIntervals.DTO.*;
 
 public class OverlappingInterval {
     public static boolean isOverlappingInterval(List<Interval> intervals) {

@@ -1,3 +1,5 @@
+package FastAndSlowPointers;
+
 public class HappyNumber {
     public static boolean isHappyNumber(int number) {
         int slow = number, fast = number;

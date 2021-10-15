@@ -1,3 +1,7 @@
+package FastAndSlowPointers;
+
+import FastAndSlowPointers.DTO.*;
+
 public class FastSlowChallenge1 {
     public static boolean isPalindrome(ListNodeDTO head) {
         if (head == null || head.next == null) {

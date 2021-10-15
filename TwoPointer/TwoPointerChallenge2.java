@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class TwoPointerChallenge2 {
     public static boolean equalStrings(String stringA, String stringB) {
         boolean result = true;

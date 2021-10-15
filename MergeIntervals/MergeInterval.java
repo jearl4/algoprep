@@ -1,5 +1,7 @@
+package MergeIntervals;
+
 import java.util.*;
-import DTO.*;
+import MergeIntervals.DTO.Interval;
 
 public class MergeInterval {
     public static List<Interval> merge(List<Interval> intervals) {

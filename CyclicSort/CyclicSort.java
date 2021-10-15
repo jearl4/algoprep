@@ -1,3 +1,5 @@
+package CyclicSort;
+
 public class CyclicSort {
     public static void cyclicSort(int[] array) {
         int i = 0;

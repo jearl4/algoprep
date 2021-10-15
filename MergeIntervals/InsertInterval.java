@@ -1,5 +1,7 @@
+package MergeIntervals;
+
 import java.util.*;
-import DTO.*;
+import MergeIntervals.DTO.Interval;
 public class InsertInterval {
     public static List<Interval> insert(List<Interval> intervalList, Interval insertedInterval) {
         if(intervalList == null || intervalList.isEmpty()){

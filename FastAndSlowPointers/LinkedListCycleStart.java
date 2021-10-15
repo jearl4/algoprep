@@ -1,3 +1,7 @@
+package FastAndSlowPointers;
+
+import FastAndSlowPointers.DTO.ListNodeDTO;
+
 public class LinkedListCycleStart {
     public static ListNodeDTO cycleStart(ListNodeDTO head) {
         int cycleLength = 0;

@@ -1,3 +1,5 @@
+package TwoPointer;
+
 import java.util.Arrays;
 
 public class TripletTarget {

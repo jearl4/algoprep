@@ -1,3 +1,5 @@
+package SlidingWindow;
+
 class MaxSumArray {
     public static int maxSum(int k, int[] array){
         int result = Integer.MIN_VALUE, tempSum = 0, windowStart = 0;

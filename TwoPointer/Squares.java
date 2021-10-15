@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class Squares {
     public static int[] squareArray(int[] array) {
         int pointer1 = 0, pointer2 = array.length - 1, largestSquare = array.length - 1;

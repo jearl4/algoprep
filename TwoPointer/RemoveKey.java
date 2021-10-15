@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class RemoveKey {
     public static int removeKey(int[] array, int key) {
         int nextElement = 0;

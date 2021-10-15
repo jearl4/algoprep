@@ -1,3 +1,5 @@
+package TwoPointer;
+
 import java.util.*;
 public class SubarrayProducts {
     public static List<List<Integer>> findProduct(int[] array, int target) {

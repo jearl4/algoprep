@@ -1,3 +1,7 @@
+package FastAndSlowPointers;
+
+import FastAndSlowPointers.DTO.ListNodeDTO;
+
 public class FastSlowChallenge2 {
     public static void shuffle(ListNodeDTO head) {
         if(head == null || head.next == null){

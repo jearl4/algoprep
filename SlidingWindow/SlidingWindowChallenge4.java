@@ -1,3 +1,5 @@
+package SlidingWindow;
+
 import java.util.*;
 public class SlidingWindowChallenge4 {
     public static List<Integer> wordCombo(String string, String[] words) {

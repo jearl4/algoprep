@@ -1,3 +1,5 @@
+package FastAndSlowPointers;
+
 public class FastSlowChallenge3 {
     public static boolean isCycle(int[] array) {
        for (int i = 0; i < array.length; i++) {

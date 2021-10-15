@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class DutchNationalFlag {
     public static void sort(int[] array) {
         int pointerA = 0, pointerB = array.length - 1;

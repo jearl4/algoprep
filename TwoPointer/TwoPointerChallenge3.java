@@ -1,3 +1,5 @@
+package TwoPointer;
+
 public class TwoPointerChallenge3 {
     public static int smallestArrayToSort(int[] array) {
         int front = 0, end = array.length - 1;

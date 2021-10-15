@@ -1,3 +1,5 @@
+package CyclicSort;
+
 public class FindDuplicateNumber {
     public static int findDuplicateNumber(int[] nums) {
         int i = 0;
