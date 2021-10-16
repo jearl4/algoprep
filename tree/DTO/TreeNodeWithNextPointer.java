@@ -2,17 +2,17 @@ package Tree.DTO;
 
 public class TreeNodeWithNextPointer {
     int val;
-    TreeNodeWithNextPointer left;
-    TreeNodeWithNextPointer right;
-    TreeNodeWithNextPointer next;
+    public TreeNodeWithNextPointer left;
+    public TreeNodeWithNextPointer right;
+    public TreeNodeWithNextPointer next;
 
-    TreeNodeWithNextPointer(int x) {
+    public TreeNodeWithNextPointer(int x) {
         val = x;
         left = right = next = null;
     }
 
     // level order traversal using 'next' pointer
-    void printLevelOrder() {
+    public void printLevelOrder() {
         TreeNodeWithNextPointer nextLevelRoot = this;
         while (nextLevelRoot != null) {
             TreeNodeWithNextPointer current = nextLevelRoot;
