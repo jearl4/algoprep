@@ -1,7 +1,7 @@
 package Tree.DTO;
 
 public class TreeNodeWithNextPointer {
-    int val;
+    public int val;
     public TreeNodeWithNextPointer left;
     public TreeNodeWithNextPointer right;
     public TreeNodeWithNextPointer next;
