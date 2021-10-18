@@ -1,6 +1,4 @@
-package Tree.DepthFirstSearch;
-
-import Tree.DTO.TreeNode;
+import DTO.*;
 
 public class PathSum {
     public static boolean hasPath(TreeNode root, int sum) {

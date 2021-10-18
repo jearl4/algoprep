@@ -1,4 +1,4 @@
-package Tree.DTO;
+package DTO;
 
 public class TreeNodeWithNextPointer {
     public int val;

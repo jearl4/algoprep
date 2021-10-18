@@ -1,6 +1,5 @@
-package Tree.DepthFirstSearch;
 
-import Tree.DTO.TreeNode;
+import DTO.TreeNode;
 import java.util.*;
 
 public class AllPaths {

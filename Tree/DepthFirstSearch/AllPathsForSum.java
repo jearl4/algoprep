@@ -1,6 +1,5 @@
-package Tree.DepthFirstSearch;
 import java.util.*;
-import Tree.DTO.TreeNode;
+import DTO.TreeNode;
 
 public class AllPathsForSum {
     public static List<List<Integer>> findAllPaths(TreeNode root, int sum) {

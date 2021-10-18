@@ -1,4 +1,4 @@
-package CyclicSort;
+
 
 public class CyclicSortChallenge2 {
     public static int findSmallestMissingPositiveNumber(int[] nums) {

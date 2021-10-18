@@ -1,4 +1,4 @@
-package Tree.DTO;
+package DTO;
 
 public class TreeNode {
   public  int val;

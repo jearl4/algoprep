@@ -1,4 +1,4 @@
-package CyclicSort;
+
 
 public class CyclicSortChallenge1 {
     public static int[] findCorruptPairs(int[] nums) {
