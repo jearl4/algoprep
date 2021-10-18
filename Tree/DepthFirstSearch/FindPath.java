@@ -3,8 +3,9 @@ import DTO.*;
 public class FindPath {
     public static boolean isPathFound(TreeNode root, int[] path) {
         if (root == null) {
-            return false;
+            return path.length == 0;
         }
+        
         return findPathRecursive(root, path, 0);
     }
 
