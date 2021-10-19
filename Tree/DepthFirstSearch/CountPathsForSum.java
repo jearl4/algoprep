@@ -28,7 +28,6 @@ public class CountPathsForSum {
 
         pathCount += findPathsForSumRecursive(currentNode.left, sum, currentPath);
         pathCount += findPathsForSumRecursive(currentNode.right, sum, currentPath);
-
         currentPath.remove(currentPath.size() - 1);
         return pathCount;
     }
