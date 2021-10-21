@@ -1,5 +1,3 @@
-package Greedy;
-
 import java.util.Arrays;
 
 public class MinimumWaitingTime {

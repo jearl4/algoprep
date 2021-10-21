@@ -1,8 +1,7 @@
-package MergeIntervals;
 
 import java.util.*;
 
-import MergeIntervals.DTO.Interval;
+import DTO.Interval;
 
 public class MergeIntervalsChallenge1 {
     public static int meetingRoomsRequired(List<Interval> meetings) {

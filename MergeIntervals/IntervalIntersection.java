@@ -1,7 +1,8 @@
-package MergeIntervals;
 
-import java.util.*;
-import MergeIntervals.DTO.Interval;
+
+import java.util.ArrayList;
+import java.util.List;
+import DTO.*;
 
 public class IntervalIntersection {
     public static Interval[] findIntersections(Interval[] intervalsA, Interval[] intervalsB) {

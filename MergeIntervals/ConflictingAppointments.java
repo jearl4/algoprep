@@ -1,8 +1,6 @@
-package MergeIntervals;
-
 import java.util.*;
 
-import MergeIntervals.DTO.Interval;
+import DTO.Interval;
 
 public class ConflictingAppointments {
     public static boolean canAttendAllAppointments(Interval[] array) {

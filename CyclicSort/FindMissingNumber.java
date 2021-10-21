@@ -1,5 +1,3 @@
-package CyclicSort;
-
 public class FindMissingNumber {
     public static int findMissingNumber(int[] nums) {
         int i = 0;
