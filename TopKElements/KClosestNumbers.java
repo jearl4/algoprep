@@ -38,12 +38,12 @@ public class KClosestNumbers {
             }
             if (arr[mid] < target) {
                 low = mid + 1;
-            }else{
+            } else {
                 high = mid - 1;
             }
         }
         if (low > 0) {
-            return low -1;
+            return low - 1;
         }
         return low;
     }
