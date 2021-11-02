@@ -28,7 +28,25 @@ public class Knapsack {
                 dp[i][c] = Math.max(profit1, profit2);
             }
         }
+        printSelectedElements(dp, weights, profits, capacity);
         return dp[n - 1][capacity];
+    }
+
+    private void printSelectedElements(int dp[][], int[] weights, int[] profits, int capacity) {
+        System.out.println("Selected Weights:");
+        int totalProfit = dp[weights.length - 1][capacity];
+        for (int i = weights.length - 1; i > 0; i--) {
+            if (totalProfit != dp[i - 1][capacity]) {
+                System.out.println(" " + weights[i]);
+                capacity -= weights[i];
+                totalProfit -= profits[i];
+            }
+        }
+
+        if (totalProfit != 0) {
+            System.out.print(" " + weights[0]);
+        }
+        System.out.println("");
     }
 
     public static void main(String[] args) {
