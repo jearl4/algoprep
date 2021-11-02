@@ -2,28 +2,33 @@ package DynamicProgramming;
 
 public class Knapsack {
     public int solveKnapsack(int[] profits, int[] weights, int capacity) {
-        Integer[][] dp = new Integer[profits.length][capacity + 1];
-        return this.knapsackReursive(dp, profits, weights, capacity, 0);
-    }
-
-    private int knapsackReursive(Integer[][] dp, int[] profits, int[] weights, int capacity, int currentIndex) {
-        if (capacity <= 0 || currentIndex >= profits.length) {
+        if (capacity <= 0 || profits.length == 0 || weights.length != profits.length) {
             return 0;
         }
+        int n = profits.length;
+        int[][] dp = new int[n][capacity + 1];
 
-        if (dp[currentIndex][capacity] != null) {
-            return dp[currentIndex][capacity];
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = 0;
         }
 
-        int profit1 = 0;
-        if (weights[currentIndex] <= capacity) {
-            profit1 = profits[currentIndex]
-                    + knapsackReursive(dp, profits, weights, capacity - weights[currentIndex], currentIndex + 1);
+        for (int c = 0; c <= capacity; c++) {
+            if (weights[0] <= c) {
+                dp[0][c] = profits[0];
+            }
         }
-        int profit2 = knapsackReursive(dp, profits, weights, capacity, currentIndex + 1);
 
-        dp[currentIndex][capacity] = Math.max(profit1, profit2);
-        return dp[currentIndex][capacity];
+        for (int i = 1; i < n; i++) {
+            for (int c = 1; c <= capacity; c++) {
+                int profit1 = 0, profit2 = 0;
+                if (weights[i] <= c) {
+                    profit1 = profits[i] + dp[i - 1][c - weights[i]];
+                }
+                profit2 = dp[i - 1][c];
+                dp[i][c] = Math.max(profit1, profit2);
+            }
+        }
+        return dp[n - 1][capacity];
     }
 
     public static void main(String[] args) {
