@@ -2,7 +2,7 @@ package DynamicProgramming;
 
 public class PartitionSet {
     public boolean canPartition(int[] nums) {
-        int sum = 0;
+        int sum = 0, n = nums.length;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
         }
@@ -11,30 +11,27 @@ public class PartitionSet {
             return false;
         }
 
-        Boolean[][] dp = new Boolean[nums.length][sum / 2 + 1];
-        return this.canPartitionRecursive(dp, nums, sum / 2, 0);
-    }
+        sum /= 2;
 
-    private boolean canPartitionRecursive(Boolean[][] dp, int[] nums, int sum, int currentIndex) {
-        if (sum == 0) {
-            return true;
+        Boolean[][] dp = new Boolean[n][sum + 1];
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = true;
         }
 
-        if (nums.length == 0 || currentIndex >= nums.length) {
-            return false;
+        for (int s = 1; s <= sum; s++) {
+            dp[0][s] = (nums[0] == s ? true : false);
         }
 
-        if (dp[currentIndex][sum] == null) {
-            if (nums[currentIndex] <= sum) {
-                if (canPartitionRecursive(dp, nums, sum - nums[currentIndex], currentIndex + 1)) {
-                    dp[currentIndex][sum] = true;
-                    return true;
+        for (int i = 1; i < n; i++) {
+            for (int s = 1; s <= sum; s++) {
+                if (dp[i - 1][s]) {
+                    dp[i][s] = dp[i - 1][s];
+                } else if (s >= nums[i]) {
+                    dp[i][s] = dp[i - 1][s - nums[i]];
                 }
             }
-            dp[currentIndex][sum] = canPartitionRecursive(dp, nums, sum, currentIndex + 1);
         }
-        
-        return dp[currentIndex][sum];
+        return dp[n - 1][sum];
     }
 
     public static void main(String[] args) {
