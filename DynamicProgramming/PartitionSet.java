@@ -11,10 +11,11 @@ public class PartitionSet {
             return false;
         }
 
-        return this.canPartitionRecursive(nums, sum / 2, 0);
+        Boolean[][] dp = new Boolean[nums.length][sum / 2 + 1];
+        return this.canPartitionRecursive(dp, nums, sum / 2, 0);
     }
 
-    private boolean canPartitionRecursive(int[] nums, int sum, int currentIndex) {
+    private boolean canPartitionRecursive(Boolean[][] dp, int[] nums, int sum, int currentIndex) {
         if (sum == 0) {
             return true;
         }
@@ -23,13 +24,17 @@ public class PartitionSet {
             return false;
         }
 
-        if (nums[currentIndex] <= sum) {
-            if (canPartitionRecursive(nums, sum - nums[currentIndex], currentIndex + 1)) {
-                return true;
+        if (dp[currentIndex][sum] == null) {
+            if (nums[currentIndex] <= sum) {
+                if (canPartitionRecursive(dp, nums, sum - nums[currentIndex], currentIndex + 1)) {
+                    dp[currentIndex][sum] = true;
+                    return true;
+                }
             }
+            dp[currentIndex][sum] = canPartitionRecursive(dp, nums, sum, currentIndex + 1);
         }
-
-        return canPartitionRecursive(nums, sum, currentIndex + 1);
+        
+        return dp[currentIndex][sum];
     }
 
     public static void main(String[] args) {
