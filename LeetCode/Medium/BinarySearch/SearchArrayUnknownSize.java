@@ -1,4 +1,4 @@
-package LeetCode.Medium;
+package LeetCode.Medium.BinarySearch;
 
 /**
  * // This is ArrayReader's API interface. You should not implement it, or
