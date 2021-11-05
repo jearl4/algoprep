@@ -1,4 +1,4 @@
-package LeetCode.LeetCodeCuratedAlgo170;
+package LeetCode.LeetCodeCuratedAlgo170.String;
 
 import java.util.ArrayList;
 import java.util.HashMap;
