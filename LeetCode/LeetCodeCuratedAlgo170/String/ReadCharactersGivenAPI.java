@@ -1,4 +1,4 @@
-package LeetCode.Easy.String;
+package LeetCode.LeetCodeCuratedAlgo170.String;
 
 /**
  * The read4 API is defined in the parent class Reader4. int read4(char[] buf4);
