@@ -8,16 +8,14 @@ public class LongestSubstringWithoutRepeats {
         int length = 0;
         int start = 0;
         Map<Character, Integer> map = new HashMap<Character, Integer>();
-        
-        for(int i = 0; i < s.length(); i++){
-            char c = s.charAt(i);
-            if(map.containsKey(c)){
-                if(map.get(c) >= start){
-                    start = map.get(c) + 1;
-                }
+
+        for (int end = 0; end < s.length(); end++) {
+            char rightChar = s.charAt(end);
+            if (map.containsKey(rightChar)) {
+                start = Math.max(start, map.get(rightChar) + 1);
             }
-            length = Math.max(length, i - start + 1);
-            map.put(c, i);
+            map.put(rightChar, end);
+            length = Math.max(length, end - start + 1);
         }
         return length;
     }
