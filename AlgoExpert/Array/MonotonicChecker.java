@@ -1,4 +1,4 @@
-package Array;
+package AlgoExpert.Array;
 
 public class MonotonicChecker {
     public static boolean isMonotonic(int[] array) {

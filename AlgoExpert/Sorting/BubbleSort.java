@@ -1,4 +1,4 @@
-package Sorting;
+package AlgoExpert.Sorting;
 
 public class BubbleSort {
     public static int[] bubbleSort(int[] array){

@@ -1,4 +1,4 @@
-package String;
+package AlgoExpert.String;
 
 public class Palindrome {
     // iterative O(n) time - O(1) space

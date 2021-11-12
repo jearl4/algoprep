@@ -1,4 +1,4 @@
-package LinkedList;
+package AlgoExpert.LinkedList;
 
 /* given a sorted linked list remove all dupes and return in sorted order */
 public class RemoveSortedDupes {

@@ -1,4 +1,4 @@
-package Array;
+package AlgoExpert.Array;
 
 // return the longest peak. Peak is strictly increasing ints until they reach a tip then strictly decreasing. 
 // at least 3 ints required to form peak.

@@ -1,4 +1,4 @@
-package BinarySearchTree;
+package AlgoExpert.BinarySearchTree;
 
 import java.util.List;
 

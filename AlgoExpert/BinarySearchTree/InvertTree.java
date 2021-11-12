@@ -1,4 +1,4 @@
-package BinarySearchTree;
+package AlgoExpert.BinarySearchTree;
 
 public class InvertTree {
     public static void invertBinaryTree(BinaryTree tree){

@@ -1,4 +1,4 @@
-package Searching;
+package AlgoExpert.Searching;
 
 public class BinarySearch {
     public static int binarySearchRunner(int[] array, int target) {

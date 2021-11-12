@@ -1,4 +1,4 @@
-package Sorting;
+package AlgoExpert.Sorting;
 
 public class SelectionSort {
     public static int[] selectionSort(int[] array){

@@ -1,4 +1,4 @@
-package Array;
+package AlgoExpert.Array;
 
 public class RunningProduct {
     public static int[] runningProduct(int[] array) {

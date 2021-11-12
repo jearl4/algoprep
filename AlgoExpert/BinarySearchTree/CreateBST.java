@@ -1,4 +1,4 @@
-package BinarySearchTree;
+package AlgoExpert.BinarySearchTree;
 
 // instert, remove and search a BST
 public class CreateBST {

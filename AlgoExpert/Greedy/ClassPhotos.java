@@ -1,4 +1,4 @@
-package Greedy;
+package AlgoExpert.Greedy;
 
 import java.util.ArrayList;
 import java.util.Collections;

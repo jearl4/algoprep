@@ -1,4 +1,4 @@
-package Sorting;
+package AlgoExpert.Sorting;
 
 public class InsertionSort {
     public static int[] insertionSort(int[] array) {

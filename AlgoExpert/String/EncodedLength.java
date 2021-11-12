@@ -1,4 +1,4 @@
-package String;
+package AlgoExpert.String;
 
 public class EncodedLength {
     public static String encodedRunLength(String string){

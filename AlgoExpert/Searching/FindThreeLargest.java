@@ -1,4 +1,4 @@
-package Searching;
+package AlgoExpert.Searching;
 
 // given unsorted array return 3 largest numbers in array sorted. Do not sort the original array
 
