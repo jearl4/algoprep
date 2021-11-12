@@ -1,6 +1,7 @@
 package LeetCode.Medium.BreadthFirstSearch;
 
-import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class ZeroOneMatrix {
     public int[][] updateMatrix(int[][] mat) {
@@ -8,24 +9,30 @@ public class ZeroOneMatrix {
             return mat;
         }
 
-        int[][] solution = new int[mat.length][mat[0].length];
-        for (int[] arr1 : solution)
-            Arrays.fill(arr1, Integer.MAX_VALUE);
+        Queue<int[]> queue = new LinkedList<>();
         for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat[i].length; j++) {
+            for (int j = 0; j < mat[0].length; j++) {
                 if (mat[i][j] == 0) {
-                    solution[i][j] = 0;
+                    queue.offer(new int[] { i, j });
                 } else {
-                    for (int k = 0; k < mat.length; k++) {
-                        for (int l = 0; l < mat[0].length; l++) {
-                            if (mat[k][l] == 0) {
-                                solution[i][j] = Math.min(solution[i][j], Math.abs(k - i) + Math.abs(l - j));
-                            }
-                        }
-                    }
+                    mat[i][j] = Integer.MAX_VALUE;
                 }
             }
         }
-        return solution;
+
+        int[][] dirs = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+
+        while (!queue.isEmpty()) {
+            int[] cell = queue.poll();
+            for (int[] d : dirs) {
+                int r = cell[0] + d[0];
+                int c = cell[1] + d[1];
+                if (r < 0 || r >= mat.length || c < 0 || c >= mat[0].length || mat[r][c] <= mat[cell[0]][cell[1]] + 1)
+                    continue;
+                queue.add(new int[] { r, c });
+                mat[r][c] = mat[cell[0]][cell[1]] + 1;
+            }
+        }
+        return mat;
     }
 }
