@@ -2,16 +2,14 @@ package LeetCode.Easy.Recursion;
 
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null;
-        ListNode temp = head;
-
-        while (temp != null) {
-            ListNode nextTemp = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = nextTemp;
+        public ListNode reverseList(ListNode head) {
+            if(head == null || head.next == null){
+                return head;
+            }
+            ListNode p = reverseList(head.next);
+            head.next.next = head;
+            head.next = null;
+            return p;
         }
-
-        return prev;
     }
 }
