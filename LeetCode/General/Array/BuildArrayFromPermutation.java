@@ -2,12 +2,14 @@ package LeetCode.General.Array;
 
 public class BuildArrayFromPermutation {
     public int[] buildArray(int[] nums) {
-        int[] solution = new int[nums.length];
-
         for (int i = 0; i < nums.length; i++) {
-            solution[i] = nums[nums[i]];
+            nums[i] = nums[i] + nums.length * (nums[nums[i]] % nums.length);
         }
 
-        return solution;
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = nums[i] / nums.length;
+        }
+
+        return nums;
     }
 }
