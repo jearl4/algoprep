@@ -2,11 +2,14 @@ package LeetCode.General.BitManipulation;
 
 public class NumberOfStepsToZero {
     public int numberOfSteps(int num) {
-        String binaryString = Integer.toBinaryString(num);
         int count = 0;
 
-        for (char bit : binaryString.toCharArray()) {
-            if (bit == '1') {
+        if (num == 0) {
+            return 0;
+        }
+
+        for (int powerOfTwo = 1; powerOfTwo <= num; powerOfTwo *= 2) {
+            if ((powerOfTwo & num) != 0) {
                 count += 2;
             } else {
                 count++;
