@@ -4,18 +4,11 @@ import java.util.Stack;
 
 public class ConvertBinaryInLinkedListToInteger {
     public int getDecimalValue(ListNode head) {
-        int result = 0;
-        Stack<Integer> stack = new Stack<>();
+        int result = head.val;
 
-        while (head != null) {
-            stack.push(head.val);
+        while (head.next != null) {
+            result = result * 2 + head.next.val;
             head = head.next;
-        }
-
-        int powerOfTwo = 1;
-        while (!stack.isEmpty()) {
-            result += (stack.pop() * powerOfTwo);
-            powerOfTwo *= 2;
         }
         return result;
     }
