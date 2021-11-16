@@ -1,14 +1,19 @@
 package LeetCode.General.String;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class JewelsAndStones {
     public int numJewelsInStones(String jewels, String stones) {
-        int count = 0;
+        Set<Character> jewelSet = new HashSet<>();
+        for (char j : jewels.toCharArray()) {
+            jewelSet.add(j);
+        }
 
-        for (int i = 0; i < jewels.length(); i++) {
-            for (int j = 0; j < stones.length(); j++) {
-                if (jewels.charAt(i) == stones.charAt(j)) {
-                    count++;
-                }
+        int count = 0;
+        for (char stone : stones.toCharArray()) {
+            if (jewelSet.contains(stone)) {
+                count++;
             }
         }
         return count;
