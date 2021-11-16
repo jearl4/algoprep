@@ -1,5 +1,7 @@
 package LeetCode.General.BinaryTree;
 
+import java.util.Stack;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -17,27 +19,26 @@ package LeetCode.General.BinaryTree;
  */
 
 public class RangeSum {
-    int sum;
-
     public int rangeSumBST(TreeNode root, int low, int high) {
-        sum = 0;
-        dfs(root, low, high);
-        return sum;
-    }
-
-    public void dfs(TreeNode node, int low, int high) {
-        if (node != null) {
-            if (node.val >= low && node.val <= high) {
-                sum += node.val;
-            }
-
-            if (node.val > low) {
-                dfs(node.left, low, high);
-            }
-
-            if (node.val < high) {
-                dfs(node.right, low, high);
+        int sum = 0;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            if(node != null){
+                if(node.val >= low && node.val <= high){
+                    sum += node.val;
+                }
+                
+                if(node.val > low){
+                    stack.push(node.left);
+                }
+                
+                if(node.val < high){
+                    stack.push(node.right);
+                }
             }
         }
+        return sum;
     }
 }
