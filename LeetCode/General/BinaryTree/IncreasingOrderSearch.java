@@ -1,31 +1,27 @@
 package LeetCode.General.BinaryTree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import Educative.Tree.DTO.TreeNode;
 
-
-
 public class IncreasingOrderSearch {
+    TreeNode cur;
+
     public TreeNode increasingBST(TreeNode root) {
-        List<Integer> vals = new ArrayList<>();
-        inOrder(root, vals);
-        TreeNode ans = new TreeNode(0), currentTree = ans;
-        for (int v : vals) {
-            currentTree.right = new TreeNode(v);
-            currentTree = currentTree.right;
-        }
+        TreeNode ans = new TreeNode(0);
+        cur = ans;
+        inOrder(root);
         return ans.right;
+
     }
 
-    public void inOrder(TreeNode node, List<Integer> vals) {
+    public void inOrder(TreeNode node) {
         if (node == null) {
             return;
         }
 
-        inOrder(node.left, vals);
-        vals.add(node.val);
-        inOrder(node.right, vals);
+        inOrder(node.left);
+        node.left = null;
+        cur.right = node;
+        cur = node;
+        inOrder(node.right);
     }
 }
