@@ -5,11 +5,11 @@ public class HammingDistance {
         int count = 0;
         int diff = x ^ y;
 
-        while (diff != 0) {
-            if (diff % 2 == 1) {
+        while(diff != 0){
+            if(diff % 2 == 1){
                 count++;
             }
-            diff = diff >> 1;
+            diff = diff >>> 1;
         }
         return count;
     }
