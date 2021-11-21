@@ -3,6 +3,8 @@ package LeetCode.General.BinaryTree;
 import java.util.ArrayList;
 import java.util.List;
 
+import Educative.Tree.DTO.TreeNode;
+
 public class FindLonelyNodes {
     public List<Integer> getLonelyNodes(TreeNode root) {
         List<Integer> nodes = new ArrayList<>();

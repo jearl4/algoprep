@@ -2,6 +2,8 @@ package LeetCode.General.BinaryTree;
 
 import java.util.Stack;
 
+import Educative.Tree.DTO.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
