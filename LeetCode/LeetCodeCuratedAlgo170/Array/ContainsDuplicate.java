@@ -1,4 +1,4 @@
-package LeetCode.Easy.HashTable;
+package LeetCode.LeetCodeCuratedAlgo170.Array;
 
 import java.util.HashSet;
 import java.util.Set;
