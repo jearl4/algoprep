@@ -1,5 +1,7 @@
 package LeetCode.General.BinaryTree;
 
+import Educative.Tree.DTO.TreeNode;
+
 public class DiameterOfTree543 {
     int diameter;
     public int diameterOfBinaryTree(TreeNode root) {
