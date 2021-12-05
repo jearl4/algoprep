@@ -1,4 +1,4 @@
-package LeetCode.Easy.Math;
+package LeetCode.LeetCodeCuratedAlgo170.Math;
 
 public class ArmstrongNumber {
     public boolean isArmstrong(int n) {
