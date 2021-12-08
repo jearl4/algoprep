@@ -48,11 +48,11 @@ public class IntersectionTwoArrays349 {
         }
     }
 
-    private int[] setIntersection(HashSet<Integer> set1, HashSet<Integer> set2) {
-        int[] output = new int[set1.size()];
+    private int[] setIntersection(HashSet<Integer> largerSet, HashSet<Integer> smallerSet) {
+        int[] output = new int[largerSet.size()];
         int i = 0;
-        for(Integer num : set1){
-            if(set2.contains(num)){
+        for(Integer num : largerSet){
+            if(smallerSet.contains(num)){
                 output[i++] = num;
             }
         }
