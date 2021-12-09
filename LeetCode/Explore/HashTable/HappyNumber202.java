@@ -1,3 +1,5 @@
+package LeetCode.Explore.HashTable;
+
 import java.util.HashSet;
 
 class HappyNumber202 {
