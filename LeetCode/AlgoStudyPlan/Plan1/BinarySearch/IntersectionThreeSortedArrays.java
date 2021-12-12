@@ -1,4 +1,7 @@
-package LeetCode.Easy.BinarySearch;
+package LeetCode.AlgoStudyPlan.Plan1.BinarySearch;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class IntersectionThreeSortedArrays {
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {

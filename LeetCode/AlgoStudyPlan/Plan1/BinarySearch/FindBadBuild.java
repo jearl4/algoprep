@@ -1,4 +1,4 @@
-package LeetCode.Easy.BinarySearch;
+package LeetCode.AlgoStudyPlan.Plan1.BinarySearch;
 
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
