@@ -1,9 +1,11 @@
 package LeetCode.Explore.HashTable;
 
+import java.util.HashMap;
+
 public class TwoSumDataStructure170 {
     private HashMap<Integer, Integer> map;
     
-    public TwoSum() {
+    public TwoSumDataStructure170() {
         this.map = new HashMap<Integer, Integer>();
     }
     
