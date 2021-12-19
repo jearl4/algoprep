@@ -5,15 +5,14 @@ public class ArmstrongNumber {
         int sum = 0;
         int nClone = n;
         int power = Integer.toString(n).length();
-        for(int i = 0; i < power; i++){
+        for (int i = 0; i < power; i++) {
             int digit = nClone % 10;
             sum += Math.pow(digit, power);
             nClone /= 10;
         }
-        
-        if(sum == n)
+
+        if (sum == n)
             return true;
         return false;
-    }
     }
 }
