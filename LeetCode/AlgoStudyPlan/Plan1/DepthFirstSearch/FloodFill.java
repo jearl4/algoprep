@@ -1,4 +1,4 @@
-package LeetCode.Easy.DepthFirstSearch;
+package LeetCode.AlgoStudyPlan.Plan1.DepthFirstSearch;
 
 public class FloodFill {
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
