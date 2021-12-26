@@ -1,5 +1,7 @@
 package LeetCode.AlgoStudyPlan.Plan1.DepthFirstSearch;
 
+import Educative.Tree.DTO.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
