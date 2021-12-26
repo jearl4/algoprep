@@ -1,4 +1,4 @@
-package LeetCode.Easy.DepthFirstSearch;
+package LeetCode.AlgoStudyPlan.Plan1.DepthFirstSearch;
 
 /**
  * Definition for a binary tree node.
