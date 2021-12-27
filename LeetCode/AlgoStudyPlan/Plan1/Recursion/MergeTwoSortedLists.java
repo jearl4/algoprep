@@ -1,4 +1,4 @@
-package LeetCode.Easy.Recursion;
+package LeetCode.AlgoStudyPlan.Plan1.Recursion;
 
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
